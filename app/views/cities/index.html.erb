@@ -1,0 +1,19 @@
+<h2> <%= _("Cities") %> </h2>
+	
+	<table class="nice_table">
+		<tr>
+			<td class="heading"> Name </td>
+			<td class="heading"> </td>
+		</tr>
+		<% for city in @cities %>
+			<tr>
+				<td> <%= city.name %> </td>
+				<td> <%= link_to _("Edit"), edit_city_path(city) %> </td>
+			</tr>
+		<% end %>
+	</table>
+
+<p><%= link_to _("New"), new_city_path %> </p>
+
+
+<%= will_paginate @cities %>

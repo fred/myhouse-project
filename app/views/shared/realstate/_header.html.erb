@@ -1,0 +1,36 @@
+<div id="header">
+	
+	<div class="container">
+		
+		<h1><%= link_to Settings.site_main_title.to_s, "/" %> </h1>
+		<hr />
+		
+		<!-- top navigation -->
+		<ul id="navigation">
+	        <li class="active"><%= link_to _("Properties"), 
+					properties_path, 
+					:title => _("Show all Properties")  %>
+			</li>
+	        <li><%= link_to _("Search"), 
+					search_properties_path,
+					:title => _("Search for a property") %>
+			</li>
+	        <li><%= link_to _("Map Search"), 
+					map_search_properties_path,
+					:title => _("Search in the Map") %>
+			</li>
+	        <li><%= link_to _("Contact us"), 
+					new_message_path,
+					:title => _("Contact us") %>
+			</li>
+		</ul>
+		<hr />
+		<!-- banner message and building background -->
+		<div id="banner">
+			<%= Settings.site_main_header %>
+		</div>
+		<hr />
+		
+	</div>
+	
+</div>

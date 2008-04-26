@@ -1,0 +1,18 @@
+<h2> <%= _("New property") %></h2>
+
+<%= error_messages_for 'property' %>
+
+	<h2> 1. <%= _("Property Information") %> </h2>
+
+	<% form_for @property, :html => {:multipart => "true"} do |f| -%>
+
+		<%= render :partial => "form" %>
+	
+	<br clear="both"/>
+	<%= image_submit_tag '/images/admin/submit.png', :border => "0" %>
+
+	<% end -%>
+
+<br/>
+
+<%= link_to _("Back"), :action => 'list' %>

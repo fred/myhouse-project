@@ -1,0 +1,33 @@
+<h2> <%= _("Messages") %> </h2>
+
+<table class="nice_table">
+  <tr>
+	<td class="heading"> <%= _("Name") %></td>
+	<td class="heading"> <%= _("Last Name") %></td>
+	<td class="heading"> <%= _("Login") %></td>
+	<td class="heading"> <%= _("Email") %></td>
+	<td class="heading"> <%= _("Admin") %></td>
+	<td class="heading"> <%= _("Created") %> </td>
+	<td class="heading"> </td>
+	<td class="heading"> </td>
+	<td class="heading"> </td>
+  </tr>
+  
+<% for user in @users %>
+  <tr>
+	<td><%= link_to user.first_name.to_s, user_path(user) %> </td>
+	<td><%= link_to user.last_name.to_s, user_path(user) %> </td>
+	<td><%= h user.login %> </td>
+	<td><%= h user.email.to_s %> </td>
+	<td><%= boolean_to_word user.admin %> </td>
+	<td><%= user.created_at.to_s(:short) %> </td>
+	<td><%= link_to _("Show"), user_path(user) %> </td>
+	<td><%= link_to _("Edit"), edit_user_path(user) %> </td>
+    <td><%= link_to _("Del"), user_path(user), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<p> <%= link_to _("New"), new_user_path %> </p>
+
+<%= will_paginate @users %>

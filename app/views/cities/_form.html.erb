@@ -1,0 +1,5 @@
+<p>Name</p>
+<p><%= text_field_with_auto_complete 'city', 'name'  %></p>
+
+<p> State </p>
+<p><%= select 'city', 'state_id', @states.collect {|p| [p.name, p.id] } %></p>

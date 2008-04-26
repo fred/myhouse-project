@@ -1,0 +1,13 @@
+
+
+<h2> <%= _("Editing User")%> </h2>
+<br />
+
+<% form_for @user, :html => { :method => :put } do |f| %>
+
+	<%= render :partial => "form" %>
+	<p><%= submit_tag _("Save") %></p>
+
+<% end -%>
+
+<p> <%= link_to _("Back"), users_path %> </p>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+	<% cache "main_left_menu" do %> 
+    	<%= render :partial => '/shared/realstate/site_main_meta' %>
+  	<% end %>
+	
+	<%= stylesheet_link_tag 'realstate/common' %>
+	<%= stylesheet_link_tag 'scaffold' %>
+	<%= stylesheet_link_tag 'presentation_compression' %>
+	<%= stylesheet_link_tag 'pagination' %>
+	
+	<%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "prototype" %>
+	<%= javascript_include_tag "behaviors_compression" %>
+	<%= javascript_include_tag 'limit_chars' %>
+</head>
+<body>
+	<!-- Start Header -->
+			
+	<% cache "main_top_navigation" do %>
+		<%= render :partial => "/shared/realstate/header"%>
+	<% end %>
+
+	<!-- Start Main Content -->
+	<div id="main" class="container">
+		
+		<!-- left column (products and features) -->
+		<div id="leftcolumn">
+			
+			<% if logged_in? %>
+				<% cache "left_menu_admin" do %> 
+		    		<%= render :partial => '/shared/realstate/left_menu_admin' %>
+		  		<% end %>
+		  	<% end %>
+					
+			<% cache "left_menu" do %> 
+		    	<%= render :partial => '/shared/realstate/left_menu' %>
+		  	<% end %>
+		
+			<%= render :partial => '/shared/realstate/cart' %>
+			
+			<% cache "featured_properties" do %> 
+		    	<%= render :partial => '/shared/realstate/featured_properties' %>
+		  	<% end %>
+		
+		</div>
+		
+		<!-- main content area -->
+		<div id="center">
+			<div class="article_wrapper">
+				<h3> <%= flash[:notice] %> </h3>
+				<%= yield %>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- Start Footer -->
+	<% if logged_in? %>
+		<% cache "main_footer" do %> 
+			<%= render :partial => '/shared/realstate/footer' %>
+		<% end %>
+	<% end %>
+	
+	<!-- Start Bottom Information -->
+    <% cache "main_bottom_info" do %> 
+    	<%= render :partial => '/shared/realstate/bottom_info' %>
+  	<% end %>
+
+	<% if RAILS_ENV == "production" %>
+	
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker(<%=Settings.google_analytics_key%>);
+			pageTracker._initData();
+			pageTracker._trackPageview();
+		</script>
+
+	<% end %>
+
+</body>
+</html>

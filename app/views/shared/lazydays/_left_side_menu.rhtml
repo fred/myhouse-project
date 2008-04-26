@@ -1,0 +1,79 @@
+<!-- 25 percent width column, aligned to the left -->
+<div class="width25 floatLeft leftColumn">
+
+	<ul class="sideMenu">
+	    <li class="here">
+	    	<h4><%= _("For a better living...") %></h4>
+			<ul>
+		        <li><%= link_to _("Properties"), 
+						properties_path, 
+						:title => _("Show all Properties")  %>
+				</li>
+		        <li><%= link_to _("Search"), 
+						search_properties_path,
+						:title => _("Search for a property") %>
+				</li>
+		        <li><%= link_to _("Map Search"), 
+						map_search_properties_path,
+						:title => _("Search in the Map") %>
+				</li>
+		        <li><%= link_to _("Contact us"), 
+						new_message_path,
+						:title => _("Contact us") %>
+				</li>
+	    	</ul>
+	    </li>
+	</ul>
+
+	<br/ >
+
+	<div id="cart">
+		<div class="latest_items">
+			
+			<h4><%= _(" My Favorites") %>:</h4>
+			<% if session[:cart].items !=[] %>
+			
+				<% for property in session[:cart].items %>
+				<div class="sidemenu_item">
+					<div class="item_photo">
+						<% if url=url_for_file_column(property, "image0", "small") %>
+						<%= link_to image_tag(url), {:controller => "properties", :action => 'show', :permalink => property.permalink} %>
+						<% end %>
+					</div>		
+					<%= link_to property.title, {:controller => "properties", :action => 'show', :permalink => property.permalink} %>
+					<p> <%= truncate(property.desc, 100) %> </p>
+					<div class="item_photo">
+						<%= link_to "<orange>remove</orange>", :controller => 'properties', :action => "delete_from_cart", :id => property %>			</div>
+				</div>
+				<% end %>
+			<% else %>
+				<div class="sidemenu_item">
+					<!-- 
+					<p>Click on the button <i>"I like It"</i> to add to your favorites,</p>
+					<p>An Agent will contact you after you Submit your Favorites</p>
+					-->
+					<p>Clique em <i>"Gostei"</i> para adicionar aos seus favoritos,</p>
+					<p>Quando terminar, deixe suas informacoes e um dos nosos agentes lhe retornara.</p>
+				</div>
+			<% end %>
+			
+		</div>
+		<br/ >
+	</div>
+	
+		<div class="latest_items">
+			<h4><%= _("Featured Properties") %>:</h4>
+			<% for property in Property.featured %>
+				<div class="sidemenu_item">
+					<div class="item_photo">
+						<% if url=url_for_file_column(property, "image0", "small") %>
+						<%= link_to image_tag(url), {:controller => "properties", :action => 'show', :permalink => property.permalink} %>
+						<% end %>
+					</div>
+					<%= link_to property.title, {:controller => "properties", :action => 'show', :permalink => property.permalink} %>
+					<p> <%= truncate(property.desc, 100) %> </p>
+				</div>
+			<% end %>
+		</div>
+
+</div>

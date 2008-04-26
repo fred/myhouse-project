@@ -1,0 +1,65 @@
+TextAreaWithStatus
+
+
+Just a little helper for all those text areas out there that need to display
+their left chars (and also limit the textarea to not exceed them).
+
+
+== Setup ==
+
+The install script should automatically copy the necessary javascript. If that
+fails you should get an error message, in which case you can try manually running
+the install script from your app's root folder (RAILS_ROOT) like this:
+
+    ruby vendor/plugins/text_area_with_status/install.rb 
+
+If that fails as well then simply copy the 
+<plugin_path>/public/javascripts/limit_chars.js file to the corresponding
+folder from RAILS_ROOT.
+
+Lastly, the plugin registers the .js script as a default so if you are using
+
+    <%= javascript_include_tag :defaults %> 
+
+the plugin's script should get automatically loaded. Alternatively you can of 
+course manually include it with:
+
+    <%= javascript_include_tag 'limit_chars' %>
+
+
+== Example ==
+
+Basically it turns this:
+
+    <%= f.text_area :description, 
+                    :onkeyup => "limit_chars(this, 100, $('chars_left'))" %><br />
+    <span id="chars_left">
+        You have <%= 100 - @object.description.length %> characters left.
+    </span>
+
+into this:
+
+    <%= f.text_area :description, :max_chars => 100 %>
+
+You can optionally customize the status message, by passing the :max_chars_msg
+option. Just make sure you embed a '%d' in the place where you want the actual
+number to appear, e.g.:
+
+    <%= f.text_area :description, :max_chars => 100,
+                    :max_chars_msg => 'Hurry up! You only have %d chars left!!' %>
+
+The equivalent text_area_tag method is also patched.
+
+
+== Support ==
+
+If you need help or you would just like to send feedback, just send an email to
+rails at rb dot no-ip dot biz
+
+
+== Dependencies ==
+
+Prototype JS framework is required for this plugin to function.
+
+
+Copyright (c) 2007 Alexandru Ungur, released under the MIT license

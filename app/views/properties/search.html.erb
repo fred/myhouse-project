@@ -1,0 +1,55 @@
+
+<% if @properties && !@properties.empty?  %>
+
+	<h3><%= _("Found") %> <%= @properties.size %> </h3>
+	
+	<%= #render :partial => "/shared/lazydays/pagination", :locals => {:collection => @properties} 
+	%>
+	<%= will_paginate @properties %>
+		
+	<% for property in @properties %>
+		<%= render :partial => "list_item", :locals=> {:property => property} %>
+	<% end %>
+	
+	<%= #render :partial => "/shared/lazydays/pagination", :locals => {:collection => @properties} 
+	%>
+	<%= will_paginate @properties %>
+		
+<% end %>
+
+<br clear="both"/>
+
+<h2> <%= _("Search for a Property") %> </h2>
+
+<% form_for :search, :url => { :action => "search" } do |f| %>
+
+	<table>
+		<tr>
+			<td> <%= _("Size") %> : </td>
+			<td> <%= text_field_tag :size, nil, :size => 10 %> <%= Settings.square_meters_long %> </td>
+		</tr>
+		<tr>
+			<td> <%= _("Rent Price") %>: </td>
+			<td> <%= text_field_tag :rent_price, nil, :size => 10 %> <%= Settings.money_currency %> </td>
+		</tr>
+		<tr>
+			<td> <%= _("Sell Price") %>: </td>
+			<td> <%= text_field_tag :sell_price, nil, :size => 10 %> <%= Settings.money_currency %> </td>
+		</tr>
+		<tr>
+			<td> <%= _("Bedrooms") %>: </td>
+			<td> <%= text_field_tag :bedrooms, nil, :size => 6 %> </td>
+		</tr>
+		<tr>
+			<td> <%= _("Bathrooms") %>: </td>
+			<td> <%= text_field_tag :bathrooms, nil, :size => 6 %> </td>
+		</tr>
+	</table>
+		
+
+<%= hidden_field :search, "true" %>
+
+<br clear="all">
+	<%= submit_tag _("Search Now"), :name => nil %>
+<% end -%>
+

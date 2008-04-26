@@ -1,0 +1,17 @@
+<%= error_messages_for 'property' %>
+
+<h2> 1. <%= _("Property Information") %> </h2>
+
+<% form_for @property, :html => {:multipart => "true", :method => :put } do |f| -%>
+
+	<%= render :partial => "form" %>
+	
+	<div class="righthalf">
+		<h3> 6. Photos: </h3>
+		<%= render :partial => "fotos" %>
+	</div>
+
+<br clear="both"/>
+<%= image_submit_tag '/images/admin/submit.png', :border => "0" %>
+
+<% end -%>

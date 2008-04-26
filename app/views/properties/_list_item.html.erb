@@ -1,0 +1,73 @@
+<div class="content">
+
+	<div class="leftcolumn">
+		<h2> <%= link_to property.title, property %> </h2>
+		<p> <%= truncate(property.desc, 200) %> </p>
+		<p> <%= property.location.name %>, <%= property.city.name %> </p>
+
+		<% if property.for_rent %>
+			<p>	<%= _("Rent Price") %>: 
+				<span class="price">
+					<%= number_to_currency(property.rent_price, :unit => Settings.unit, :precision => 0, :delimiter => ",") %>
+				</span>
+			</p>
+		<% end %>
+	
+		<% if property.for_sell %>
+			<p> <%= _("Sell Price") %>:
+				<span class="price">
+					<%= number_to_currency(property.sell_price, :unit => Settings.unit , :precision => 0, :delimiter => ",") %>
+				</span>
+			</p>
+		<% end %>
+		
+		<p> 
+			<%= property.size %> <%= _("sqm") %> | 
+			<%= pluralize(property.bedrooms, _("Bedroom")) %> | 
+			<%= pluralize(property.bathrooms, _("Bathroom")) %> | 
+			<%= pluralize(property.parking_slots, _("Parking Slot")) %>
+		</p>
+		
+		<div class="small_left">
+			<div class="small_left">
+				<%= link_to image_tag("/images/gostei.png", :class => "link"), 
+					{ 	:controller => 'properties', 
+						:action => 'add_to_cart', 
+						:id => property
+					},	:method => :post			
+				%>
+			</div>
+			<div class="small_left">
+				<!-- 
+				<p class="normal"> <%= yes_or_no property.has_internet, _("Internet") %> </p>
+				<p class="normal"> <%= yes_or_no property.has_pool, _("Swimming Pool") %> </p>
+				<p class="normal"> <%= yes_or_no property.has_fitness, _("Fitness") %> </p>
+				<p class="normal"> <%= yes_or_no property.has_cabletv, _("Cable TV") %> </p>
+			-->
+				<p class="normal">
+					<div><%= yes_or_no property.has_internet, _("Internet") %></div>
+					<div><%= yes_or_no property.has_pool, _("Swimming Pool") %></div>
+					<div><%= yes_or_no property.has_fitness, _("Fitness") %></div>
+					<div><%= yes_or_no property.has_cabletv, _("Cable TV") %></div>
+				</p>
+			</div>
+		</div>
+
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="photo_box">
+			<% 4.times do |t|%>
+				<% if url=url_for_file_column(property, "image"+t.to_s, "small") %>
+					<%= link_to image_tag(url, :class => "photo", :border => "0"), property %>
+				<% end %>
+				<% if t==1%>
+					</div>
+					<div class="photo_box">
+				<% end %>
+			<%end%>
+			<br clear="both"/>
+			<p><%= _("Click on the images to see more") %></p>
+		</div>
+	</div>
+</div>

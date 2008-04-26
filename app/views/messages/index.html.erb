@@ -1,0 +1,30 @@
+<h2> <%= _("Messages") %> </h2>
+
+<table class="nice_table">
+  <tr>
+	<td class="heading"> <%= _("Name") %></td>
+	<td class="heading"> <%= _("Title") %></td>
+	<td class="heading"> <%= _("Email") %></td>
+	<td class="heading"> <%= _("News") %></td>
+	<td class="heading"> <%= _("Urgent") %></td>
+	<td class="heading"> <%= _("Items") %> </td>
+	<td class="heading"> <%= _("Date") %> </td>
+	<td class="heading"> </td>
+  </tr>
+  
+<% for message in @messages %>
+  <tr>
+	<td><%= link_to message.name, message_path(message) %> </td>
+	<td><%= h message.title %> </td>
+	<td><%= h message.email %> </td>
+	<td><%= boolean_to_word message.subscribe_news %> </td>
+	<td><%= boolean_to_word message.urgent_contact %> </td>
+	<td><%= h message.items_count %> </td>
+	<td><%= message.created_at.to_s(:short) %> </td>
+    <td><%= link_to _("Del"), message_path(message), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<%= will_paginate @messages %>

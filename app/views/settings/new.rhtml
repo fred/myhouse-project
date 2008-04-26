@@ -1,0 +1,12 @@
+<h2><%= _("New Settings") %></h2>
+
+<%= error_messages_for :setting %>
+
+<% form_for @setting, :html => { :method => :post } do |f| %>
+	
+	<%= render :partial => "form" %>
+	<p> <%= submit_tag _("Create") %> </p>
+<% end %>
+
+<%= link_to _("Back"), settings_path %>
+

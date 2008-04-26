@@ -1,0 +1,32 @@
+<p>
+<%= @search.inspect %>
+<%= params[:search].inspect %>
+</p>
+
+<% #form_for :search, @search, 
+    #     	:url => {:controller => "properties", 
+     #       :action => "map_search"} do |f| 
+-%>
+
+<%= #f.check_box "search" 
+%>
+
+<%= #submit_tag "Search Now" 
+%>
+
+<% #end 
+-%>
+
+<% form_for :search, @search, 
+         	:url => {:controller => "properties", 
+            :action => "map_search"} do |f| -%>
+
+	<% @locations.each do |location| %>
+		<p>
+			<%= check_box_tag :search, 'selected[]', location.id %> <%= location.name %>
+		</p>
+	<% end %>
+
+	<%= submit_tag "Search Now" %>
+
+<% end -%>

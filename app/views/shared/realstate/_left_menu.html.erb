@@ -1,0 +1,19 @@
+<h3 class="leftbox"> <%= _("Menu") %>  </h3>
+<ul class="leftbox borderedlist">
+	<li><%= link_to _("Properties"), 
+		properties_path, 
+		:title => _("Show all Properties")  %>
+	</li>
+	<li><%= link_to _("Search"), 
+		search_properties_path,
+		:title => _("Search for a property") %>
+	</li>
+	<li><%= link_to _("Map Search"), 
+		map_search_properties_path,
+		:title => _("Search in the Map") %>
+	</li>
+	<li><%= link_to _("Contact us"), 
+		new_message_path,
+		:title => _("Contact us") %>
+	</li>
+</ul>

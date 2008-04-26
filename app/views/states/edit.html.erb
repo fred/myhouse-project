@@ -1,0 +1,11 @@
+<h2>Editing State</h2>
+
+<%= error_messages_for :state %>
+
+<% form_for(:state, :url => state_path(@state), :html => { :method => :put }) do |f| %>
+
+	<%= render :partial => "form" %>
+	<%= submit_tag _("Save") %>
+<% end %>
+
+<%= link_to _('Back'), states_path %>

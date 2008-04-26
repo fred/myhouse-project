@@ -1,0 +1,20 @@
+<h2> <%= _("States") %> </h2>
+	
+	<table class="nice_table">
+		<tr>
+			<td class="heading"> Name </td>
+			<td class="heading"> </td>
+			<td class="heading"> </td>
+		</tr>
+		<% for state in @states %>
+			<tr>
+				<td> <%= state.name %> </td>
+				<td> <%= link_to _("Edit"), edit_state_path(state) %> </td>
+				<td> <%= link_to _("Del"), state_path(state), :confirm => 'Are you sure?', :method => :delete %></td>
+			</tr>
+		<% end %>
+	</table>
+
+<p><%= link_to _("New"), new_state_path %> </p>
+
+<%= will_paginate @states %>

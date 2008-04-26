@@ -1,0 +1,81 @@
+<div class="photo_box">
+<% if url=url_for_file_column(@property, "image0", "medium") %>
+	<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+				url_for_file_column(@property, "image0"), 
+				:popup => ["Main Image", 'height=600,width=800'] %>
+	<p>Image 1</p>
+	<p><%= @property.image0_desc %> </p>
+	<p><%= link_to "Delete this Image", {:action => 'destroy_image', :id => @property.id, :image => "image0"}, :confirm => 'Are you sure you wish to delete this image?', :method => "post" %>
+<% else %>
+	<h4>No image </h4>
+<% end %>
+</div>
+
+<div class="photo_box">
+<% if url=url_for_file_column(@property, "image1", "medium") %>
+	<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+				url_for_file_column(@property, "image1"), 
+				:popup => ["Main Image", 'height=600,width=800'] %>
+	<p>Image 2</p>
+	<p><%= @property.image1_desc %> </p>
+	<p><%= link_to "Delete this Image", {:action => 'destroy_image', :id => @property.id, :image => "image1"}, :confirm => 'Are you sure you wish to delete this image?', :method => "post" %>
+	<% else %>
+		<h4>No image </h4>
+	<% end %>
+</div>
+
+<div class="photo_box">
+<% if url=url_for_file_column(@property, "image2", "medium") %>
+	<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+				url_for_file_column(@property, "image2"), 
+				:popup => ["Main Image", 'height=600,width=800'] 
+	%>
+	<p>Image 3</p>
+	<p><%= @property.image2_desc %> </p>
+	<p><%= link_to "Delete this Image", {:action => 'destroy_image', :id => @property.id, :image => "image2"}, :confirm => 'Are you sure you wish to delete this image?', :method => "post" %>
+<% else %>
+	<h4>No image </h4>
+<% end %>
+</div>
+
+<div class="photo_box">
+<% if url=url_for_file_column(@property, "image3", "medium") %>
+	<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+				url_for_file_column(@property, "image3"), 
+				:popup => ["Main Image", 'height=600,width=800'] 
+	%>
+	<p>Image 4</p>
+	<p><%= @property.image3_desc %> </p>
+	<p><%= link_to "Delete this Image", {:action => 'destroy_image', :id => @property.id, :image => "image3"}, :confirm => 'Are you sure you wish to delete this image?', :method => "post" %>
+	<% else %>
+		<h4>No image </h4>
+	<% end %>
+</div>
+
+<div class="photo_box">
+<% if url=url_for_file_column(@property, "image4", "medium") %>
+	<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+				url_for_file_column(@property, "image4"), 
+				:popup => ["Main Image", 'height=600,width=800'] 
+	%>
+	<p>Image 5</p>
+	<p><%= @property.image4_desc %> </p>
+	<p><%= link_to "Delete this Image", {:action => 'destroy_image', :id => @property.id, :image => "image4"}, :confirm => 'Are you sure you wish to delete this image?', :method => "post" %>
+<% else %>
+	<h4>No image </h4>
+<% end %>
+</div>
+
+<div class="photo_box">
+<% if url=url_for_file_column(@property, "image5", "medium") %>
+	<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+				url_for_file_column(@property, "image5"), 
+				:popup => ["Main Image", 'height=600,width=800'] 
+	%>
+	<p>Image 6</p>
+	<p><%= @property.image5_desc %> </p>
+	<p><%= link_to "Delete this Image", {:action => 'destroy_image', :id => @property.id, :image => "image5"}, :confirm => 'Are you sure you wish to delete this image?', :method => "post" %>
+	<% else %>
+		<h4>No image </h4>
+	<% end %>
+</div>

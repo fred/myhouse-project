@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Administration of <%= controller.controller_name %></title>
+	<%= stylesheet_link_tag '/themes/admin/css/scaffold' %>
+	<%= stylesheet_link_tag '/themes/admin/css/style' %>
+	<%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "prototype" %>
+	<%= javascript_include_tag "scriptaculous" %>
+</head>
+
+<body>
+	<div id="container">
+		<%= render :partial => "/shared/admin/title" %>
+		<% if logged_in? %>
+			<%= render :partial => "/shared/admin/menu" %>
+		<% end %>
+		<div id="content">	
+			<div id="left">
+				<h3>
+					<div id="flash_notice">
+						<%= flash[:notice] %>
+					</div>
+				</h3>
+				<div class="gradient">
+					<div class="entry">
+						<%= yield  %>
+					</div>
+				</div>
+			</div>
+			<% if logged_in? %>
+			<%= render :partial => "/shared/admin/right_sidebar" %>
+			<% end %>
+			<%= render :partial => "/shared/admin/footer" %>
+		</div>
+	</div>
+</body>
+
+</html>

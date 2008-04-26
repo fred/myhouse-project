@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta name="description" content="your description goes here" />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Your Name" />
+	<title>Properties: <%= controller.action_name %></title>
+	<%= stylesheet_link_tag '/themes/lazydays/css/layout', :media => "screen, projection, tv" %>
+	<%= stylesheet_link_tag '/themes/lazydays/css/html', :media => "screen, projection, tv" %>
+	<%= stylesheet_link_tag '/themes/lazydays/css/print', :media => "print" %>
+	<%= stylesheet_link_tag 'captcha' %>
+	<%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "prototype" %>
+</head>
+
+
+<body>
+
+<!-- CONTENT: Holds all site content except for the footer.  This is what causes the footer to stick to the bottom -->
+<div id="content">
+
+	
+	<%= render :partial => "/shared/lazydays/header" %>
+	<%= render :partial => "/shared/lazydays/main_menu" %>
+  	<!-- PAGE CONTENT BEGINS: This is where you would define the columns (number, width and alignment) -->
+	<div id="page">
+		<%= render :partial => "/shared/lazydays/left_side_menu" %>
+		<!-- 75 percent width column, aligned to the right -->
+    		<div class="width75 floatRight">
+			<%= yield  %>
+  		</div>
+	</div>
+</div>
+
+<%= render :partial => "/shared/lazydays/footer" %>
+
+<%= Settings.google_analytics %>
+
+</body>
+</html>

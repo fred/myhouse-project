@@ -1,0 +1,39 @@
+--- 
+users_00001: 
+  salt: 840c335bf00a0186423c56b7685703db145ae278
+  activated_at: 
+  updated_at: 2007-12-19 18:46:37
+  comments: 
+  crypted_password: 8761d8081a69fb62b3ad2389e51fd41a243656a5
+  icon: 
+  activation_code: 
+  admin: "0"
+  country: 
+  remember_token_expires_at: 
+  id: "1"
+  remember_token: 
+  city_id: 
+  first_name: 
+  last_name: 
+  login: fred
+  created_at: 2007-03-31 02:22:44
+  email: fred@freds-computer
+users_00002: 
+  salt: 10eb8acc13160fab6704f69526e7cd6a48fea655
+  activated_at: 
+  updated_at: 2007-12-18 20:04:55
+  comments: 
+  crypted_password: 2f2f0df0a117bd03fb3efb06605d81e753e6a18e
+  icon: 
+  activation_code: 
+  admin: "0"
+  country: 
+  remember_token_expires_at: 
+  id: "2"
+  remember_token: 
+  city_id: 
+  first_name: 
+  last_name: 
+  login: test
+  created_at: 2007-12-18 20:03:25
+  email: test@test.com

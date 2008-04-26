@@ -1,0 +1,34 @@
+<table>
+	<tr>
+		<td> </td>
+		<td> <%= error_message_on :message, :name, "Your name ", "","inputError" %> </td>
+	</tr>
+	</td>
+		<td> Your Name : </td>
+		<td> <%= text_field :message, :name, :size => 22 %> </td>
+	</tr>
+	<tr>
+		<td> Subject : </td>
+		<td> <%= text_field :message, :title, :size => 22 %> </td>
+	</tr>
+	<tr>
+		<td> Message : </td>
+		<td> <%= text_area :message, :body, :cols => 21, :rows => 4, :max_chars => 1000, :max_chars_msg => "You have %d chars left." %> </td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td> <%= error_message_on :message, :email, "Your email ", "","inputError" %></td>
+	</tr>
+	<tr>
+		<td> Email : </td>
+		<td> <%= text_field :message, :email, :size => 22 %> </td>
+	</tr>
+	<tr>
+		<td> Mobile Phone : </td>
+		<td> <%= text_field :message, :mobile_phone, :size => 22 %> </td>
+	</tr>
+	<tr>
+		<td> Land Phone : </td>
+		<td> <%= text_field :message, :land_phone, :size => 22 %> </td>
+	</tr>
+</table>

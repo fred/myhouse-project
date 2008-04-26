@@ -1,0 +1,13 @@
+
+<p> First Name: <%= @user.first_name %></p>
+<p> Last Name: <%= @user.last_name %></p>
+<p> Login: <%= @user.login %></p>
+<p> Email: <%= @user.email %></p>
+
+<br />
+
+<p>
+<%= link_to _("Edit"), edit_user_path(@user) %> |
+<%= link_to _("Back"), users_path %> | 
+<%= link_to _("Delete"), @user, :confirm => 'Are you sure?', :method => :delete %>
+</p>

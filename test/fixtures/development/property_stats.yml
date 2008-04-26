@@ -1,0 +1,99 @@
+--- 
+property_stats_00005: 
+  updated_at: 2007-08-04 16:44:41
+  property_id: "5"
+  id: "8"
+  page_views: "5"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:38
+property_stats_00006: 
+  updated_at: 2007-08-10 14:41:17
+  property_id: "6"
+  id: "9"
+  page_views: "34"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:38
+property_stats_00007: 
+  updated_at: 2007-08-10 15:03:44
+  property_id: "7"
+  id: "10"
+  page_views: "24"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:38
+property_stats_00008: 
+  updated_at: 2007-08-10 15:02:59
+  property_id: "8"
+  id: "11"
+  page_views: "82"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:38
+property_stats_00009: 
+  updated_at: 2007-08-10 15:25:06
+  property_id: "9"
+  id: "12"
+  page_views: "0"
+  comments_count: "0"
+  created_at: 2007-08-10 15:25:06
+property_stats_00010: 
+  updated_at: 2007-08-10 15:26:40
+  property_id: "10"
+  id: "13"
+  page_views: "0"
+  comments_count: "0"
+  created_at: 2007-08-10 15:26:40
+property_stats_00011: 
+  updated_at: 2007-12-15 02:46:34
+  property_id: "11"
+  id: "14"
+  page_views: "0"
+  comments_count: "0"
+  created_at: 2007-12-15 02:46:34
+property_stats_00012: 
+  updated_at: 2007-12-16 02:43:15
+  property_id: "12"
+  id: "15"
+  page_views: "0"
+  comments_count: "0"
+  created_at: 2007-12-16 02:43:15
+property_stats_00001: 
+  updated_at: 2007-08-09 23:35:27
+  property_id: "1"
+  id: "4"
+  page_views: "19"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:37
+property_stats_00013: 
+  updated_at: 2007-12-16 02:44:38
+  property_id: "13"
+  id: "16"
+  page_views: "0"
+  comments_count: "0"
+  created_at: 2007-12-16 02:44:38
+property_stats_00002: 
+  updated_at: 2007-08-10 15:05:04
+  property_id: "2"
+  id: "5"
+  page_views: "15"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:37
+property_stats_00014: 
+  updated_at: 2007-12-16 02:47:22
+  property_id: "14"
+  id: "17"
+  page_views: "0"
+  comments_count: "0"
+  created_at: 2007-12-16 02:47:22
+property_stats_00003: 
+  updated_at: 2007-05-11 10:40:27
+  property_id: "3"
+  id: "6"
+  page_views: "12"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:37
+property_stats_00004: 
+  updated_at: 2007-08-07 18:39:02
+  property_id: "4"
+  id: "7"
+  page_views: "5"
+  comments_count: "0"
+  created_at: 2007-04-19 18:11:37

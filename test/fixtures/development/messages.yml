@@ -1,0 +1,82 @@
+--- 
+messages_00001: 
+  resource_type: 
+  name: Fred
+  subscribe_news: "1"
+  urgent_contact: "1"
+  body: |-
+    bala bla
+    bla 
+    bla
+  title: I like those
+  id: "3"
+  properties: ""
+  land_phone: "897987"
+  created_at: 2007-08-09 20:01:21
+  mobile_phone: "98798789"
+  email: email@fred.com
+messages_00002: 
+  resource_type: 
+  name: Fred
+  subscribe_news: "0"
+  urgent_contact: "0"
+  body: I like that conda
+  title: nice
+  id: "2"
+  properties: ""
+  land_phone: "45345326"
+  created_at: 2007-08-07 22:13:35
+  mobile_phone: "52523523452"
+  email: fred@mail.com
+messages_00003: 
+  resource_type: 
+  name: fred
+  subscribe_news: "0"
+  urgent_contact: "1"
+  body: sfgsf
+  title: dfsdg
+  id: "4"
+  properties: ""
+  land_phone: 0989080890
+  created_at: 2007-08-09 20:03:54
+  mobile_phone: "908098908"
+  email: blabla@bla.com
+messages_00004: 
+  resource_type: 
+  name: Fred
+  subscribe_news: "1"
+  urgent_contact: "0"
+  body: asdfasdf
+  title: sdfsdf
+  id: "5"
+  properties: ""
+  land_phone: "8787"
+  created_at: 2007-08-09 20:04:24
+  mobile_phone: "456456"
+  email: sadfasf
+messages_00005: 
+  resource_type: 
+  name: John
+  subscribe_news: "1"
+  urgent_contact: "0"
+  body: ""
+  title: ""
+  id: "6"
+  properties: ""
+  land_phone: ""
+  created_at: 2007-08-10 05:51:05
+  mobile_phone: ""
+  email: mail@mail.com
+messages_00006: 
+  resource_type: 
+  name: Fred
+  subscribe_news: "1"
+  urgent_contact: "0"
+  body: ""
+  title: ""
+  id: "17"
+  properties: ""
+  land_phone: ""
+  created_at: 2007-12-16 16:46:29
+  mobile_phone: ""
+  email: email@email.com

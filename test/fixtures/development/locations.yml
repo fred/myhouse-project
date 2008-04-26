@@ -1,0 +1,111 @@
+--- 
+locations_00014: 
+  name: 104 Sul
+  left_position: "622"
+  top_position: "112"
+  id: "17"
+locations_00003: 
+  name: Concessionarias
+  left_position: "140"
+  top_position: "114"
+  id: "6"
+locations_00015: 
+  name: 102 Sul
+  left_position: "646"
+  top_position: "88"
+  id: "18"
+locations_00004: 
+  name: Arniqueira
+  left_position: "240"
+  top_position: "154"
+  id: "7"
+locations_00016: 
+  name: Galeria
+  left_position: "670"
+  top_position: "64"
+  id: "19"
+locations_00005: 
+  name: Guara
+  left_position: "296"
+  top_position: "154"
+  id: "8"
+locations_00017: 
+  name: Central
+  left_position: "704"
+  top_position: "30"
+  id: "20"
+locations_00006: 
+  name: Feira
+  left_position: "348"
+  top_position: "154"
+  id: "9"
+locations_00018: 
+  name: Samambaia
+  left_position: "42"
+  top_position: "294"
+  id: "21"
+locations_00007: 
+  name: Shopping
+  left_position: "390"
+  top_position: "196"
+  id: "10"
+locations_00019: 
+  name: Samamabaia Sul
+  left_position: "75"
+  top_position: "260"
+  id: "22"
+locations_00008: 
+  name: Asa Sul
+  left_position: "432"
+  top_position: "240"
+  id: "11"
+locations_00020: 
+  name: Furnas
+  left_position: "112"
+  top_position: "224"
+  id: "23"
+locations_00009: 
+  name: 114 Sul
+  left_position: "494"
+  top_position: "240"
+  id: "12"
+locations_00021: 
+  name: Taguatiga Sul
+  left_position: "146"
+  top_position: "190"
+  id: "24"
+locations_00010: 
+  name: 112 Sul
+  left_position: "530"
+  top_position: "205"
+  id: "13"
+locations_00022: 
+  name: Aguas Claras
+  left_position: "180"
+  top_position: "154"
+  id: "25"
+locations_00011: 
+  name: 110 Sul
+  left_position: "554"
+  top_position: "180"
+  id: "14"
+locations_00012: 
+  name: 108 Sul
+  left_position: "576"
+  top_position: "158"
+  id: "15"
+locations_00001: 
+  name: "Pra\xE7a do Relogio"
+  left_position: "28"
+  top_position: "94"
+  id: "4"
+locations_00013: 
+  name: 106 Sul
+  left_position: "600"
+  top_position: "132"
+  id: "16"
+locations_00002: 
+  name: Estrada Parque
+  left_position: "90"
+  top_position: "94"
+  id: "5"

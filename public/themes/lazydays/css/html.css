@@ -1,0 +1,552 @@
+/**************************************************************
+   AUTHOR:  Pat Heard (fullahead.org)
+   DATE:    2006.03.19
+   PURPOSE: Styles the html elements
+ **************************************************************/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  font: 400 0.8em verdana, arial, sans-serif;
+  line-height: 170%;
+
+  background: #666 url(/images/lazydays/bg/header.jpg) repeat-x top left;
+  color: #EEE;
+}
+
+h1 {   
+  clear: both;
+  font: 700 2.5em "trebuchet ms", serif;
+  color: #FFF;
+}
+
+h2 {
+  font: 400 1.5em "trebuchet ms", serif;
+  color: #9FF3FF;
+}
+
+h2 a {
+  color: #29E3FF;
+}
+
+h2 a:hover {
+  color: #FFF;
+}
+
+h3 {
+  font: 400 1.3em "trebuchet ms", serif;
+  color: #F8D766;
+}
+
+h4 {
+  font: 700 1.1em "trebuchet ms", serif;
+  color: #F39F01;
+}
+
+h5 {
+  font: 700 1.1em "trebuchet ms", serif;
+  color: #F17400;
+}
+
+h6 {
+  font: 700 1em "trebuchet ms", serif;
+  color: #FF4B33;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, dl {
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+}
+p {
+	padding: 0 0 4px 16px;
+}
+
+/* Done so the leftmost column aligns properly with the header.
+   If the leftmost column has class gradient applied to it, 
+   this class isn't required. */
+.leftColumn h1,
+.leftColumn h2, 
+.leftColumn h3,
+.leftColumn h4,
+.leftColumn h5,
+.leftColumn h6,
+.leftColumn p,
+.leftColumn dl {
+  padding-left: 0;
+}
+.leftColumn h4 {
+	font-weight: normal;
+	padding: 5px;
+}
+a {
+  color: #8BE6FA;
+}
+
+/* Uncomment this if you would like a visited link style 
+a:visited {
+  text-decoration: line-through;
+} */
+
+a:hover {
+  color: #FFF;
+}
+
+b {
+  color: #FFF;
+}
+
+ol, ul {
+  margin: 10px 30px;
+  padding: 0 30px;
+}
+
+ol {
+  color: #FC0;
+}
+
+ol span {
+  color: #EEE;
+}
+
+ul {
+  list-style-image: url(/images/lazydays/bg/bullet.gif);
+}
+
+del {
+  color: #AAA;
+}
+
+code {
+  margin: 10px 15px;
+  padding: 10px;
+  display: block;
+  overflow: auto;
+  
+  font: 400 1em courier, monospace;
+  line-height: 120%;
+  white-space: pre;
+  
+  background: #444;
+}
+
+.leftColumn code {
+  margin-left: 0;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+
+dt {
+  font-weight: bold;
+  color: #FFB323;
+}
+
+dd {
+  margin-left: 0;
+  padding-left: 45px; 
+}
+
+
+
+/**************************************************************
+   Form Elements
+ **************************************************************/
+
+label {
+  font-size: 1.0em;
+  display: inline;
+  /*text-decoration: underline;*/
+  font-style: italic;
+}
+
+input,
+textarea,
+select {
+  padding: 2px;
+  font: 400 1em verdana, sans-serif;
+  color: #444;
+  background: #EEE;
+  border: 1px solid #444;
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover,
+select:focus,
+select:hover {
+  color: #000;
+  background: #E4F7FA;
+  border: 1px solid #00DFFF;
+}
+
+input.button {
+  padding: 2px 5px;
+  font: 400 1.1em "trebuchet ms", serif;
+  color: #555;
+  background: #9FF3FF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FFF #00DFFF #00DFFF #FFF;
+}
+
+
+
+
+
+/**************************************************************
+   Blockquote and included icons
+ **************************************************************/
+
+blockquote {
+  margin: 10px 15px;
+  padding-left: 27px;
+  
+  background-color: #444;  
+  background-image: url(/images/lazydays/icons/quote.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 50%;  
+}
+
+blockquote.exclamation {
+  background-image: url(/images/lazydays/icons/exclamation.gif);
+}
+
+blockquote.stop {
+  background-image: url(/images/lazydays/icons/stop.gif);
+}
+
+blockquote.go {
+  background-image: url(/images/lazydays/icons/go.gif);
+}
+
+
+
+
+
+/**************************************************************
+   Images
+ **************************************************************/
+
+
+img.floatRight {
+  margin: 5px 0px 10px 15px;  
+}
+
+img.floatLeft {
+  margin: 5px 15px 10px 0px;
+}
+
+a img {  
+  border: 2px solid #8BE6FA;
+  margin: 2px;
+  display: inline;
+}
+a:hover img {  
+  /* Fixes IE bug - IE doesn't correctly apply the style on a:hover so need to mask it */
+  border: 2px solid #FFF !important;
+  border: 2px solid #8BE6FA;
+}
+a img.link { 
+	
+  	border: 0;
+  	margin: 10px;
+  	display: inline;
+	outline: none;
+}
+a:hover img.link { 
+  	border: 0 !important;
+	outline: none !important;
+	margin: 10px;
+}
+
+/**************************************************************
+   Side Menu
+ **************************************************************/
+.sidemenu_item {
+	width: 100%;
+	display: table;
+	padding: 4px 4px 4px 2px;
+}
+.sidemenu_item a {
+	margin: 2px;
+	padding: 0;
+	font-size: 0.8em;
+}
+.sidemenu_item p {
+	/*display: inline;*/
+	font-size: 0.7em;
+	color: #ddd;
+}
+
+.sidemenu_item .item_photo {
+	display: inline;
+	float:left;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/**** ERROR FORM FIELDS ****/
+.fieldWithErrors {
+  /*padding: 0px;
+  margin:0px;
+  background-color: #133E66;*/
+  display: inline;
+}
+.fieldWithErrors input {
+	border: 2px solid red;
+}
+.inputError {
+	color: #F8D766;
+	margin: 0;
+	text-align: center;
+}
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+div.uploadStatus {
+  margin: 5px;
+}
+
+div.progressBar {
+  margin: 5px;
+}
+
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
+#map_search .station {
+	padding: 0;
+	position: absolute;
+}
+#map_search * input {
+	padding: 0;
+	margin: 0;
+}
+
+/*** PAGINATION CSS ***/
+.pagination { 
+	font-size: 1.3em;
+	margin: 5px 0 10px 0;
+	padding: 0px;
+	width: auto;
+	/*float: left;*/
+	/*background: #fff;*/
+}
+.pagination ul {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	/* Can be set to "right" to right align pagination interface*/
+}
+.pagination li {
+	list-style-type: none;
+	display: inline;
+	padding-bottom: 1px;
+}
+.pagination a, .pagination a:visited {
+	padding: 0 5px;
+	/*border: 1px solid #666;*/
+	text-decoration: none;
+	color: #ccc;
+}
+.pagination a:hover, .pagination a:active {
+	/*border: 1px solid #333;*/
+	color: yellow;
+}
+.pagination li.currentpage {
+	/*font-weight: bold;*/
+	font-size:1.3em;
+	padding: 0 5px;
+	/*border: 1px solid orange*/;
+	color: #fff;
+}
+.pagination li.disablepage {
+	padding: 0 5px;
+	/*border: 1px solid #ccc;*/
+	color: #888	;
+}
+.pagination li.nextpage {
+	/*font-weight: bold;*/
+}
+* html .pagination li.currentpage, * html .pagination li.disablepage {
+	/* IE 6 and below. */
+	/* Adjust non linked LIs slightly to account for bugs */
+	margin-right: 5px;
+	padding-right: 0;
+}
+/**** PAGINATION ENDS HERE *****/
+
+
+
+.multiple_select {
+  /*float: left;*/
+  /*border: 1px solid #aaa;*/
+  height: auto;
+  width: 400px;	
+  padding: 2px;
+  margin: 2px;
+  overflow: auto;
+}
+
+.multiple_select, .multiple_select ul {
+	float:left;
+	margin: 0;
+	padding: 0;
+  	list-style-type: none;
+}
+
+.multiple_select_checkbox {
+	float: left;
+  	background: #fff;
+}
+
+.alt {
+  background: #eef;
+}
+
+
+.gradient table .heading {
+	text-align: right;
+	font-weight: bold;
+}
+.gradient table .value {
+	text-align: left;
+}
+
+/* Submenu of active menu item */
+.gradient ul {
+	float: right;
+	margin: 0 20px 0 0;
+	padding: 10px;
+}
+.gradient ul li {
+	margin: 0;
+	padding: 0;
+}
+.gradient ul li a {
+  font: 400 0.6em verdana, arial, sans-serif; 
+  color: #FFF;  
+  background: url(/images/lazydays/bg/bullet.gif) no-repeat 10px 0px;
+}
+
+.gradient ul li a:hover {
+  color: #9FF3FF;
+  background: #5F5F5F url(/images/lazydays/bg/bullet.gif) no-repeat 10px 0px;
+}
+
+
+small {
+	font-size:0.6em;
+}
+smaller {
+	font-size:0.5em;
+}
+smallest {
+	font-size:0.4em;
+}
+red {
+	color: red;
+}
+orange {
+	color: orange;
+}
+blue {
+	color: blue;
+}
+green {
+	color: green;
+}
+yellow {
+	color: yellow;
+}
+brown {
+	color: brown;
+}
+navy {
+	color: navy;
+}
+gray1 {
+	color: #111;
+}
+gray2 {
+	color: #222;
+}
+gray3 {
+	color: #333;
+}
+gray4 {
+	color: #444;
+}
+gray5 {
+	color: #555;
+}
+gray6 {
+	color: #666;
+}
+gray7 {
+	color: #777;
+}
+gray8 {
+	color: #888;
+}
+gray8 {
+	color: #999;
+}
+gray10 {
+	color: #aaa;
+}
+gray11 {
+	color: #bbb;
+}
+gray12 {
+	color: #ccc;
+}

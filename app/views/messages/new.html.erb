@@ -1,0 +1,56 @@
+<div class="lefthalf">
+
+	<h2> <%= _("Contact us") %> </h2>
+
+	<% form_for(:message, :url => messages_path) do |f| %>	
+	
+		<%= render :partial => "form" %>
+		
+		<p> <%= check_box :message, :subscribe_news, :checked => true %>
+		<%= _("Send me news of the Hottest and Newest Properties") %>. </p>
+		
+		<p> <%= check_box :message, :urgent_contact, :checked => false %> 
+		<%= _("Please Contact me Urgently") %>. </p>
+		
+		<%= submit_tag _("Send") %>
+		
+	<% end -%>
+
+
+
+</div>
+
+<div class="righthalf">
+	<h2><%= _("Your Favorite Choices") %> </h2>
+	
+	<div id="cart">
+		<% if session[:cart] %>
+			<h3><%= _("Our Agent will contact you about your selected properties") %></h3>
+			<div class="latest_items">
+				<% for property in cart_items %>
+					<div class="sidemenu_item">
+						<div class="item_photo">
+							<% if url=url_for_file_column(property, "image0", "small") %>
+								<%= link_to image_tag(url), property %>
+							<% end %>
+						</div>
+						<%= link_to property.title, property %>
+						<p> <%= truncate(property.desc, 100) %> </p>
+						<div class="item_photo">
+							<%= link_to "<orange>remove</orange>", 
+								{:controller => 'properties', :action => "delete_from_cart", :id => property}, 
+								:method => :post 
+							%>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		<% else %>
+			<h3> <%= _("You have not chosen any property") %>. </h3>
+			<p> <%= _("Click on the link <i>\"I like It\"</i> to add to your favorites") %> </p>
+			<p> <%= _("An Agent will contact you after you Submit") %> </p>
+		<% end %>
+	</div>
+	
+</div>
+

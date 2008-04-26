@@ -1,0 +1,50 @@
+
+<table class="form_table">
+
+	<tr>
+		<td> <%= _("First Name") %> : </td>
+		<td> <%= text_field :user, :first_name %> </td>
+	</tr>
+
+	<tr>
+		<td> <%= _("Last Name") %> : </td>
+		<td> <%= text_field :user, :last_name %></td>
+	</tr>
+	
+	<tr>
+		<td> </td>
+		<td> <%= error_message_on :user, :login, "Login ", "","inputError" %> </td>
+	</tr>
+	<tr>
+		<td>  <%= _("Login") %> : </td>
+		<td> <%= text_field :user, :login %></td>
+	</tr>
+
+	<tr>
+		<td> </td>
+		<td> <%= error_message_on :user, :email, "Email ", "","inputError" %> </td>
+	</tr>
+	<tr>
+		<td>  <%= _("Email") %> : </td>
+		<td> <%= text_field :user, :email %></td>
+	</tr>
+
+	<tr>
+		<td> </td>
+		<td> <%= error_message_on :user, :password, "Password ", "","inputError" %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Password") %> : </td>
+		<td> <%= password_field :user, :password %></td>
+	</tr>
+
+	<tr>
+		<td> </td>
+		<td> <%= error_message_on :user, :password_confirmation, "Password Confirmation ", "","inputError" %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Confirm Password") %> : </td>
+		<td> <%= password_field :user, :password_confirmation %></td>
+	</tr>
+
+</table>

@@ -1,0 +1,21 @@
+<p class="order_links"> 
+	<%= _("Order by") %>: 
+	<% @sort_links.each do |t| %>
+		<%= sort_link t[:title], t[:name] %> |
+	<% end %>
+</p>
+
+<% for property in @properties %>
+	<% cache property.permalink do %>
+		<%= render :partial => "list_item", :locals=> {:property => property} %>
+	<% end %>
+	<br clear="both"/>
+	<% if logged_in? %>
+		<h3 class="red"> <%= link_to _("Edit"), edit_property_path(property) %> </h3>
+	<% end %>
+<% end %>
+
+<h3> <%= _("Total")%> <%= @properties.total_entries %> <%= _("Properties") %>. </h3>
+
+<br clear="all"/>
+<p> <%= will_paginate @properties %> </p>

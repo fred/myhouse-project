@@ -1,0 +1,177 @@
+--- 
+properties_00001: 
+  permalink: 11-the-best-property
+  property_type_id: "1"
+  updated_at: 2007-12-16 02:59:07
+  has_pool: "1"
+  bedrooms: "2"
+  size: "100"
+  building_fees: "300"
+  title: The best property
+  rent_price: "0"
+  image0: 11_ibis_cove_lanai.jpg
+  image5_desc: ""
+  image1: 19_nap_1032_030l.jpg
+  has_cabletv: "1"
+  building_name: Building Name
+  location_id: "4"
+  image4_desc: ""
+  image2: 19_nap_1032_001l.jpg
+  image0_desc: ""
+  bathrooms: "2"
+  id: "11"
+  lease_min: 
+  contact_info: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse non risus eget velit euismod placerat. Nulla facilisi. Phasellus non arcu non enim hendrerit adipiscing. Ut eu lacus a justo adipiscing vestibulum. Quisque vestibulum, enim nec porta porta, elit metus auctor mi, quis sollicitudin metus arcu et tortor. Sed vel leo. Quisque consectetuer porttitor eros. Suspendisse quis velit. Morbi pretium pharetra lectus. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  image3_desc: ""
+  image3: 19_nap_1032_051l.jpg
+  building_desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse non risus eget velit euismod placerat. Nulla facilisi. Phasellus non arcu non enim hendrerit adipiscing. Ut eu lacus a justo adipiscing vestibulum. Quisque vestibulum, enim nec porta porta, elit metus auctor mi, quis sollicitudin metus arcu et tortor. Sed vel leo. Quisque consectetuer porttitor eros. Suspendisse quis velit. Morbi pretium pharetra lectus. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  desc: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse non risus eget velit euismod placerat. Nulla facilisi. Phasellus non arcu non enim hendrerit adipiscing. Ut eu lacus a justo adipiscing vestibulum. Quisque vestibulum, enim nec porta porta, elit metus auctor mi, quis sollicitudin metus arcu et tortor. Sed vel leo. Quisque consectetuer porttitor eros. Suspendisse quis velit. Morbi pretium pharetra lectus. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  neighbour: ""
+  image4: 30_3850_cedar_mb.jpg
+  image2_desc: ""
+  parking_slots: "1"
+  has_fitness: "1"
+  available_date: "2007-12-15"
+  for_rent: "0"
+  for_sell: "0"
+  city_id: "1"
+  image5: 39_4plexfront.jpg
+  image1_desc: ""
+  user_id: 
+  special_tag: "0"
+  address: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse non risus eget velit euismod placerat. Nulla facilisi. Phasellus non arcu non enim hendrerit adipiscing. Ut eu lacus a justo adipiscing vestibulum. Quisque vestibulum, enim nec porta porta, elit metus auctor mi, quis sollicitudin metus arcu et tortor. Sed vel leo. Quisque consectetuer porttitor eros. Suspendisse quis velit. Morbi pretium pharetra lectus. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  created_at: 2007-12-15 02:46:34
+  sell_price: "0"
+  has_internet: "1"
+properties_00002: 
+  permalink: 12-new-best-property-part-2
+  property_type_id: "3"
+  updated_at: 2007-12-16 15:59:58
+  has_pool: "0"
+  bedrooms: "4"
+  size: "300"
+  building_fees: "0"
+  title: New Best property Part 2
+  rent_price: "10000"
+  image0: Living_Rm_43_550.jpg
+  image5_desc: ""
+  image1: 117_outsideathumb_temp.jpg
+  has_cabletv: "1"
+  building_name: Another Building Name
+  location_id: "4"
+  image4_desc: ""
+  image2: 41_8203_rear_view.jpg
+  image0_desc: ""
+  bathrooms: "3"
+  id: "12"
+  lease_min: 
+  contact_info: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  image3_desc: ""
+  image3: 48_waterside_pool_2.jpg
+  building_desc: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  desc: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  neighbour: ""
+  image4: 55_400_lr.jpg
+  image2_desc: ""
+  parking_slots: "2"
+  has_fitness: "1"
+  available_date: "2007-12-16"
+  for_rent: "1"
+  for_sell: "0"
+  city_id: "1"
+  image5: 109_tib_lanai_new.jpg
+  image1_desc: ""
+  user_id: 
+  special_tag: "0"
+  address: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  created_at: 2007-12-16 02:43:15
+  sell_price: "0"
+  has_internet: "1"
+properties_00003: 
+  permalink: 13-yet-another-best-property-part-4
+  property_type_id: "3"
+  updated_at: 2007-12-16 03:00:14
+  has_pool: "1"
+  bedrooms: "5"
+  size: "400"
+  building_fees: "500"
+  title: Yet Another Best property Part 4
+  rent_price: "85000"
+  image0: Living_Rm_43_550.jpg
+  image5_desc: ""
+  image1: living_room3.jpg
+  has_cabletv: "0"
+  building_name: Another Building Name
+  location_id: "5"
+  image4_desc: ""
+  image2: 42_4plexfront.jpg
+  image0_desc: ""
+  bathrooms: "5"
+  id: "13"
+  lease_min: 
+  contact_info: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  image3_desc: ""
+  image3: 59_pool_view_2nd_fl.jpg
+  building_desc: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  desc: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  neighbour: Suk.
+  image4: 55_400_lr.jpg
+  image2_desc: ""
+  parking_slots: "3"
+  has_fitness: "1"
+  available_date: "2007-12-16"
+  for_rent: "1"
+  for_sell: "0"
+  city_id: "1"
+  image5: Living_Rm_43_550.jpg
+  image1_desc: ""
+  user_id: 
+  special_tag: "1"
+  address: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  created_at: 2007-12-16 02:44:38
+  sell_price: "0"
+  has_internet: "0"
+properties_00004: 
+  permalink: 14-the-ultimate-condominium
+  property_type_id: "3"
+  updated_at: 2007-12-19 16:51:32
+  has_pool: "0"
+  bedrooms: "3"
+  size: "120"
+  building_fees: "300"
+  title: "The Ultimate Condominium "
+  rent_price: "1000"
+  image0: 19_nap_1032_030l.jpg
+  image5_desc: ""
+  image1: 117_outsideathumb_temp.jpg
+  has_cabletv: "1"
+  building_name: Better Name
+  location_id: "6"
+  image4_desc: ""
+  image2: 102_102_view.jpg
+  image0_desc: ""
+  bathrooms: "2"
+  id: "14"
+  lease_min: 
+  contact_info: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  image3_desc: ""
+  image3: 
+  building_desc: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  desc: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  neighbour: Suk.
+  image4: 55_glades_club_house1.jpg
+  image2_desc: ""
+  parking_slots: "1"
+  has_fitness: "1"
+  available_date: "2007-12-16"
+  for_rent: "1"
+  for_sell: "1"
+  city_id: "1"
+  image5: OCEAN_VIEW_2005.jpg
+  image1_desc: ""
+  user_id: 
+  special_tag: "0"
+  address: Praesent at velit dapibus ipsum commodo pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ut diam a quam aliquam gravida. Curabitur et purus. Integer faucibus arcu ac elit. Donec cursus, justo porttitor lobortis elementum, nibh eros imperdiet urna, interdum commodo neque tortor non risus. Suspendisse hendrerit dui nec nulla. Aliquam sodales. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis lobortis. In non turpis at pede nonummy bibendum. Morbi lacinia tellus nec elit. In eu nibh.
+  created_at: 2007-12-16 02:47:22
+  sell_price: "150000"
+  has_internet: "1"

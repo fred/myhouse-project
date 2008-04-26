@@ -1,0 +1,151 @@
+body { background-color: #fff; color: #333; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+  margin:10px 15px 15px 20px; 
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 1px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #EDD4A9;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-weight: bold;
+  color: red;
+  font-size: 12px;
+  list-style: square;
+}
+
+div.uploadStatus {
+  margin: 5px;
+}
+
+div.progressBar {
+  margin: 5px;
+}
+
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
+
+table label {
+	font-weight: bold;
+	margin:10px 15px 15px 20px;
+}
+
+table p {
+	margin: 0 !important;
+}
+
+.entryphoto2 {
+	padding: 2px;
+	border: 1px solid #bbb;
+	display: inline;
+	width: 244px;
+	height: 280px;
+	float: left;
+	text-align: center;	
+}
+
+.entryphoto2 a img .entryphoto {
+	border: none;
+	outline: none;
+}
+
+.entryphoto2 a:hover {
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0;
+}
+
+#flash_notice {
+}
+
+#flash_notice p {
+	color: green;
+}
+
+/*** PAGINATION CSS ***/
+.pagination { 
+	font-size: 1.3em;
+	margin: 2px 0 2px 0;
+	padding: 0px;
+	width: auto;
+	/*float: left;*/
+	/*background: #fff;*/
+}
+.pagination ul {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	/* Can be set to "right" to right align pagination interface*/
+}
+.pagination li {
+	list-style-type: none;
+	display: inline;
+	padding-bottom: 1px;
+}
+.pagination a, .pagination a:visited {
+	padding: 0 5px;
+	/*border: 1px solid #666;*/
+	text-decoration: none;
+	color: #666;
+}
+.pagination a:hover, .pagination a:active {
+	/*border: 1px solid #333;*/
+	color: orange;
+}
+.pagination li.currentpage {
+	/*font-weight: bold;*/
+	font-size:1.3em;
+	padding: 0 5px;
+	/*border: 1px solid orange*/;
+	color: orange;
+}
+.pagination li.disablepage {
+	padding: 0 5px;
+	/*border: 1px solid #ccc;*/
+	color: #888;
+}
+.pagination li.nextpage {
+	/*font-weight: bold;*/
+}
+* html .pagination li.currentpage, * html .pagination li.disablepage {
+	/* IE 6 and below. */
+	/* Adjust non linked LIs slightly to account for bugs */
+	margin-right: 5px;
+	padding-right: 0;
+}
+/**** PAGINATION ENDS HERE *****/

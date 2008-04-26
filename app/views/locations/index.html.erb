@@ -1,0 +1,22 @@
+<h2> <%= _("Locations") %> </h2>
+	
+	<table class="nice_table">
+		<tr>
+			<td width="140px" class="heading"> Name </td>
+			<td width="40px" class="heading"> LEFT </td>
+			<td width="40px" class="heading"> TOP </td>
+			<td width="40px" class="heading"> </td>
+		</tr>
+		<% for location in @locations %>
+			<tr>
+				<td> <%= location.name %> </td>
+				<td> <%= location.left_position %> </td>
+				<td> <%= location.top_position %> </td>
+				<td> <%= link_to _("Edit"), edit_location_path(location) %> </td>
+			</tr>
+		<% end %>
+	</table>
+
+<p><%= link_to _("New"), new_location_path %> </p>
+
+<%= will_paginate @locations %>

@@ -1,0 +1,10 @@
+<h2> <%= _("City") %> </h2>
+
+<%= error_messages_for :city %>
+
+<% form_for(:city, :url => city_path(@city), :html => { :method => :put }) do |f| %>
+	<%= render :partial => "form" %>
+  	<p><%= submit_tag _("Save") %> </p>
+<% end %>
+
+<%= link_to _("Back"), cities_path %>

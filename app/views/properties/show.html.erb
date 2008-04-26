@@ -1,0 +1,127 @@
+<% cache "properties/#{@property.id}" do %>	
+
+	<div class="leftcolumn">
+	
+		<h2> <%= @property.title %> - #<%= @property.id %> </h2>
+		
+		 <% if logged_in? %>
+			<h2 class="red"> <%= link_to _("Edit"), edit_property_path(@property) %> </h2>
+		<% end %>
+		
+
+		<p> <%= @property.desc %> </p>
+
+		<h3> <%= _("Building Information") %> </h3>
+		<p> <%= @property.building_desc %></p>
+
+		<p>  <%= _("Size") %>:  <%= @property.size %> <%= _("Square meters") %></p>
+		<p>  <%= _("Bedrooms") %>:  <%= @property.bedrooms %></p>
+		<p>  <%= _("Bathrooms") %>:  <%= @property.bathrooms %></p>
+
+		<h3> <%= _("Location") %> </h3>
+		<p> <%= @property.neighbour %> </p>
+		<p> <%= @property.city.name %> </p>
+
+
+		<h3> <%= _("Contract Information") %> </h3>
+
+		<% if @property.for_rent %> 
+			<p> <%= _("This") %> <%= @property.property_type.name %> <%= _("is for Rent at") %>:
+				<span class="price">
+					<%= number_to_currency(@property.rent_price, :unit => Settings.unit, :precision => 0, :delimiter => ",") %>
+				</span>
+			</p>
+		<% else %>
+			<p>  <%= _("Not for Rent") %> </p>
+		<% end %>
+
+		<% if @property.for_sell %> 
+			<p> <%= _("This") %> <%= @property.property_type.name %> <%= _("is for Sell at") %>: 
+				<span class="price">
+					<%= number_to_currency(@property.sell_price, :unit => Settings.unit, :precision => 0, :delimiter => ",") %> 
+				</span>
+			</p>
+		<% else %>
+			<p>  <%= _("Not for Sell") %>  </p>
+		<% end %>
+
+		<p> <%= _("Building Extra Fees") %>:  
+			<span class="price">
+				<%= number_to_currency(@property.building_fees, :unit => Settings.unit, :precision => 0, :delimiter => ",") %>
+			</span>
+		</p>
+		<p>  <%= _("Available Date") %>:  <%= @property.available_date  %></p>
+
+		<h3> <%= _("Misc") %>. </h3>
+		<p class="normal"> <%= yes_or_no @property.has_internet, _("Internet") %> </p>
+		<p class="normal"> <%= yes_or_no @property.has_pool, _("Swimming Pool") %> </p>
+		<p class="normal"> <%= yes_or_no @property.has_fitness, _("Fitness") %> </p>
+		<p class="normal"> <%= yes_or_no @property.has_cabletv, _("Cable TV") %> </p>
+
+		<%= link_to image_tag("/images/gostei.png", :class => "link"), 
+			{ :controller => 'properties', :action => 'add_to_cart', :id => @property },
+			:method => :post
+		%>
+	</div>
+	
+	<div id="leftcolumn">
+		
+		<h2 class="center"> <%= _("Photos")%> </h2>
+		
+		<div class="photo_box">
+			<% if url=url_for_file_column(@property, "image0", "medium") %>
+			<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+					url_for_file_column(@property, "image0"), 
+					:popup => ["Main Image", 'width=640,height=480'] %>
+			<% end %>
+			<%= @property.image0_desc %>
+		</div>
+
+		<div class="photo_box">
+			<% if url=url_for_file_column(@property, "image1", "medium") %>
+			<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+					url_for_file_column(@property, "image1"), 
+					:popup => ["Main Image", 'width=640,height=480'] %>
+			<% end %>
+			<%= @property.image1_desc %>
+		</div>
+
+		<div class="photo_box">
+			<% if url=url_for_file_column(@property, "image2", "medium") %>
+			<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+					url_for_file_column(@property, "image2"), 
+					:popup => ["Main Image", 'width=640,height=480'] %>
+			<% end %>
+			<%= @property.image2_desc %>
+		</div>
+
+		<div class="photo_box">
+			<% if url=url_for_file_column(@property, "image3", "medium") %>
+			<%= link_to image_tag(url, :class => "photo", :border => "0", :alt => no_image), 
+					url_for_file_column(@property, "image3"), 
+					:popup => ["Main Image", 'width=640,height=480'] %>
+			<% end %>
+			<%= @property.image3_desc %>
+		</div>
+
+		<div class="photo_box">
+			<% if url=url_for_file_column(@property, "image4", "medium") %>
+			<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+					url_for_file_column(@property, "image4"), 
+					:popup => ["Main Image", 'width=640,height=480'] %>
+			<% end %>
+			<%= @property.image4_desc %>
+		</div>
+
+		<div class="photo_box">
+			<% if url=url_for_file_column(@property, "image5", "medium") %>
+			<%= link_to image_tag(url, :class => "photo", :border => "0"), 
+					url_for_file_column(@property, "image5"), 
+					:popup => ["Main Image", 'width=640,height=480'] %>
+			<% end %>
+			<%= @property.image5_desc %> 
+		</div>
+
+	</div>	
+
+<% end %>

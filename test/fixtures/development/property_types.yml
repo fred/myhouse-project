@@ -1,0 +1,19 @@
+--- 
+property_types_00001: 
+  name: Condominium
+  id: "1"
+property_types_00002: 
+  name: House
+  id: "2"
+property_types_00003: 
+  name: Appartament
+  id: "3"
+property_types_00004: 
+  name: Studio
+  id: "4"
+property_types_00005: 
+  name: Building
+  id: "5"
+property_types_00006: 
+  name: Office
+  id: "6"

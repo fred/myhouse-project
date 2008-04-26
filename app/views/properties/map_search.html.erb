@@ -1,0 +1,47 @@
+<div class="content">
+
+	<% if @properties && !@properties.empty?  %>
+
+		<h3><%= _("Found") %> <%= @properties.size %> <%= _("results for stations")%>: 
+			<% for location_requested in @locations_requested %>
+				<%= "<orange>#{location_requested.name}</orange>" %>,
+			<% end %>
+		</h3>
+
+		<%= will_paginate @properties %>
+		
+		<% for property in @properties %>
+				<%= render :partial => "list_item", :locals => {:property => property} %>
+		<% end %>
+	
+		<%= will_paginate @properties %>
+	
+	<% end %>
+
+</div>
+
+<div class="content">
+	
+	<% cache "map_search" do %>
+	
+		<h2> <%= Settings.search_map_title %></h2>
+
+		<% form_for :search, :url => { :action => "map_search" } do |f| %>
+
+			<div id="map_search">
+
+				<% @locations.each do |location| %>
+					<span class="station" style="margin-top:<%=location.top_position%>px; margin-left:<%=location.left_position%>px;" >
+						<%= check_box_tag 'search[]', location.id %>
+					</span>
+				<% end -%>
+	
+			</div>
+	
+			<%= submit_tag _("Search Now") %>
+
+		<% end -%>
+		
+	<% end -%>
+
+</div>

@@ -1,0 +1,110 @@
+<div class="lefthalf">
+
+	<p> <label> <%= _("Name") %> </p>
+	<p> <%= text_field :property, :title %></p>
+
+	<p> <label> <%= _("Tipo da propriedade") %> </p>
+	<p> <%= select :property, :property_type_id, @property_types.collect {|p| [p.name, p.id] } %></p>
+
+	<p> <%= text_field :property, :size, "size" => 5 %> <label> <%= _("Square meters") %> </label> </p>
+
+	<p> <%= text_field :property, :bedrooms, "size" => 3 %> <label> <%= _("Bedrooms") %> </label> </p>
+
+	<p> <%= text_field :property, :bathrooms, "size" => 3 %> <label> <%= _("Bathrooms") %> </label> </p>
+
+	<p> <%= text_field :property, :parking_slots,  "size" => 3  %> <label> <%= _("Parking slots") %> </label> </p>
+
+	<p> <label> <%= _("Property Description") %> <label> </p>
+	<p> <%= text_area :property, :desc, :rows => 6, :cols => 30, :max_chars => 1000, :max_chars_msg => "You only have %d chars left." %></p>
+
+	<h2> 2. <%= _("Location") %> </h2>
+
+	<p> <label> <%= _("Location in the Map") %> </label> </p>
+	<p> <%= select :property, :location_id, @locations.collect {|p| ["#{p.name}", p.id] }  %></p>
+	
+	<p> <label> <%= _("Neighborhood") %> </label> </p>
+	<p> <%= text_field :property, :neighbour  %></p>
+
+	<p> <label> <%= _("City") %> </label> </p>
+	<p> <%= select :property, :city_id, @cities.collect {|p| ["#{p.full_name}", p.id] }  %></p>
+
+	<p> <label> <%= _("Address") %> </label> </p>
+	<p> <%= text_area :property, :address, :rows => 6, :cols => 30, :max_chars => 1000, :max_chars_msg => "You only have %d chars left." %> </p>
+
+	<h2> 3. <%= _("Building Information") %> </h2>
+
+	<p> <label> <%= _("Building Name") %> </label> </p>
+	<p> <%= text_field :property, :building_name %></p>
+
+	<p> <label> <%= _("Building Description") %> </label> </p>
+	<p> <%= text_area :property, :building_desc, :rows => 6, :cols => 30, :max_chars => 1000, :max_chars_msg => "You only have %d chars left."  %></p>
+
+	<p> <label> <%= _("Building Extra Fees") %> </label> </p>
+	<p> <%= text_field :property, :building_fees, "size" => 6 %></p>
+
+
+	<h2> 4. <%= _("Contract Information") %> </h2>
+
+	<p>	<%= check_box :property, "for_rent", {}, "true", "false" %> 
+	<label> <%= _("For Rent") %> </label> </p>
+		
+	<p> <label> <%= _("Rent Price") %> </label> 
+	<%= text_field :property, :rent_price, "size" => 8 %> </p>
+
+	<p> <%= check_box :property, "for_sell", {}, "true", "false" %> 
+	<label> <%= _("For Sell") %> </label> </p>
+		
+	<p> <label> <%= _("Sell Price") %> </label>	
+	<%= text_field :property, :sell_price, "size" => 8 %> </p>
+	
+	<p> <label> <%= _("Available Date") %>: </label></p>
+	<p> <%= date_select :property, :available_date, :order => [:day, :month, :year], :start_year => Time.now.year %></p>
+
+	<p> <label> <%= _("Contact Information") %> </label> </p>
+	<p> <%= text_area :property, :contact_info, :rows => 6, :cols => 30, :max_chars => 1000, :max_chars_msg => "You only have %d chars left."  %></p>
+	
+	<h2> 5. <%= _("Misc") %>. </h2>
+	<p>	<%= check_box :property, "special_tag", {}, "true", "false" %>
+		<label> <%= _("Featured Product") %>? </label>
+	</p>
+	<p>	<%= check_box :property, "has_internet", {}, "true", "false" %> 
+		<label> <%= _("Internet") %> </label>
+	</p>
+	<p>	<%= check_box :property, "has_cabletv", {}, "true", "false" %> 
+		<label> <%= _("Cable TV") %> </label>
+	</p>
+	<p>	<%= check_box :property, "has_pool", {}, "true", "false" %>
+		<label> <%= _("Swimming Pool") %> </label>
+	</p>
+	<p>	<%= check_box :property, "has_fitness", {}, "true", "false" %> 
+		<label> <%= _("Fitness") %> </label>
+	</p>	
+</div>
+
+<div class="righthalf">
+	<h2> 6. <%= _("Add Photos") %> </h2>
+	<p> <%= _("Image") %> 1: </p>
+	<p> <%= file_column_field "property", :image0 %> </p>
+	<p> <%= _("Description") %> 1: </p>
+	<p> <%= text_field :property, :image0_desc %> </p>
+	<p> <%= _("Image") %> 2: </p>
+	<p> <%= file_column_field "property", :image1 %> </p>
+	<p> <%= _("Description") %> 2: </p>
+	<p> <%= text_field :property, :image1_desc %> </p>
+	<p> <%= _("Image") %> 3: </p>
+	<p> <%= file_column_field "property", :image2 %> </p>
+	<p> <%= _("Description") %> 3: </p>
+	<p> <%= text_field :property, :image2_desc %> </p>
+	<p> <%= _("Image") %> 4: </p>
+	<p> <%= file_column_field "property", :image3 %> </p>
+	<p> <%= _("Description") %> 4: </p>
+	<p> <%= text_field :property, :image3_desc %> <br/></p>
+	<p> <%= _("Image") %> 4: </p>
+	<p> <%= file_column_field "property", :image4 %> </p>
+	<p> <%= _("Description") %> 5: </p>
+	<p> <%= text_field :property, :image4_desc %> </p>
+	<p> <%= _("Image") %>" 6: </p>
+	<p> <%= file_column_field "property", :image5 %> </p>
+	<p> <%= _("Description") %> 6: </p>
+	<p> <%= text_field :property, :image5_desc %> </p>
+</div>

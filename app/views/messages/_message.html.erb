@@ -1,0 +1,26 @@
+<table>
+	</td>
+		<td> Name : </td>
+		<td> <%= @message.name %> </td>
+	</tr>
+	<tr>
+		<td> Subject : </td>
+		<td> <%= @message.title %> </td>
+	</tr>
+	<tr>
+		<td> Message : </td>
+		<td> <%= @message.body %> </td>
+	</tr>
+	<tr>
+		<td> Email : </td>
+		<td> <%= @message.email %></td>
+	</tr>
+	<tr>
+		<td> Mobile Phone : </td>
+		<td> <%= @message.mobile_phone %> </td>
+	</tr>
+	<tr>
+		<td> Land Phone : </td>
+		<td> <%= text_field :message, :land_phone, :size => 22 %> </td>
+	</tr>
+</table>

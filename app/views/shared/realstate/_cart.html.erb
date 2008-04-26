@@ -1,0 +1,31 @@
+<div class="leftbox features">
+	<div class="latest_items">
+		<h3 class="leftbox header_small"><%= _(" My Favorites") %>:</h3>
+		<% if session[:cart].items !=[] %>
+
+			<% for property in cart_items %>
+				<div class="sidemenu_item">
+					<h3><%= link_to property.title,  property %></h3>
+					<div class="photo">
+						<% if url=url_for_file_column(property, "image0", "small") %>
+							<%= link_to image_tag(url), property %>
+						<% end %>
+						<h3> <%= property.location.name %>, <%= property.city.name %> </h3>
+						
+						<%= link_to _("Remove"), 
+							{:controller => 'properties', :action => "delete_from_cart", :id => property},
+							:method => :post
+						%>
+					</div>
+					<br />
+				</div>
+			<% end %>
+		<% else %>
+			<div class="sidemenu_item">
+				<p> <%= _("Click on the link <i>\"I like It\"</i> to add to your favorites") %> </p>
+				<p> <%= Settings.cart_thank_you_message %> </p>
+			</div>
+		<% end %>
+	</div>
+	<hr/ >
+</div>

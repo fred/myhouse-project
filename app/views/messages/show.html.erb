@@ -1,0 +1,43 @@
+<h2> <%= _("Message") %> </h2>
+
+<table class="nice_table">
+	</td>
+		<td> <%= _("Name")%> : </td>
+		<td> <%= h @message.name %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Subject")%> : </td>
+		<td> <%= h @message.title %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Messsage")%> : </td>
+		<td> <%= h @message.body %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Emails")%> : </td>
+		<td> <%= h @message.email %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Mobile Phone")%> : </td>
+		<td> <%= h @message.mobile_phone %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Land Phone")%> : </td>
+		<td> <%= h @message.land_phone %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Receive News")%> : </td>
+		<td> <%= boolean_to_word @message.land_phone %> </td>
+	</tr>
+	<tr>
+		<td> <%= _("Urgent")%> : </td>
+		<td> <%= boolean_to_word @message.land_phone %> </td>
+	</tr>
+</table>
+
+<% unless @message.items.blank? %>
+	<h2> Properties </h2>
+	<% @message.properties_array.each do |property| %>
+		<p> <%= link_to property.id, property %> - <%= link_to property.title, property %> </p>
+	<% end %>
+<% end %>

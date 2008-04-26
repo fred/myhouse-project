@@ -1,0 +1,11 @@
+<h3 class="leftbox"> <%= _("Admin") %>  </h3>
+<ul class="leftbox borderedlist">
+	<li> <%= link_to _("Messages"), messages_path %> </li>
+	<li> <%= link_to _("New Property"), new_property_path %></li>
+	<li> <%= link_to _("Cities"), cities_path %></li>
+	<li> <%= link_to _("Locations"), locations_path %></li>
+	<li> <%= link_to _("States"), states_path %></li>
+	<li> <%= link_to _("Settings"), settings_path %></li>
+	<li> <%= link_to _("Users"), users_path %></li>
+	<li> <%= link_to _("Logout"), session_path, :method => :delete %></li>
+</ul>
